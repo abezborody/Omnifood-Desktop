@@ -7,7 +7,7 @@
     height: 2.2rem;
 }
 
-header {
+.header {
     background-color: #fdf2e9;
     height: 9.6rem;
     padding: 0 4.8rem;
@@ -253,7 +253,7 @@ header {
 }
 
 .meal-card {
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 12px;
     overflow: hidden;
     transition: all 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -306,23 +306,327 @@ header {
     font-weight: 500;
 }
 
-.list {
+
+
+/**********************************************************/
+/*                 TESTIMONIALS SECTION                   */
+/**********************************************************/
+
+.section-testimonials {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.testimonials-container {
+    padding: 9.6rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+    font-style: italic;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    opacity: 0.8;
+    transition: all 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img:hover {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/**********************************************************/
+/*                 PRICING SECTION                   */
+/**********************************************************/
+
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+.pricing-plan {
+
+    border-radius: 12px;
+
+    width: 75%;
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+
+
+.pricing-plan--complete {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "best value";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    color: #fff;
+
+    background-color: #51cf66;
+    padding: 0.8rem 8rem;
+    top: 6%;
+    right: -18%;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.05);
+
+    transform: rotate(45deg);
+
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+.plan-name {
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+.plan-price {
+    font-size: 7.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.plan-price span {
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #777; */
+    margin-right: 0.8rem;
+}
+.plan-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+.plan-sign-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+.plan-details {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/**********************************************************/
+/*                   FEATURES SECTION                     */
+/**********************************************************/
+
+.feature-icon {
+    font-size: 3.2rem;
+    color: #e67e22;
+    margin-bottom: 3.2rem;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+    padding: 1.6rem;
+}
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+/**********************************************************/
+/*                 CTA SECTION                   */
+/**********************************************************/
+
+.section-cta {
+    padding: 4.8rem 0 12.8rem;
+}
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+.cta .heading-secondary {
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+
+}
+.cta-img-box {
+    background-image: linear-gradient(to right bottom, #eb984e35, #e67e2235), url('../img/eating.jpg');
+    
+    background-size: cover;
+    background-position: center;
+}
+.cta-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+}
+.cta-form label {
+    font-size: 1.6rem;
+    display: block;
+    font-weight: 500;
+    /* color: #555; */
+    margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 8px;
+    border: none;
+    background-color: #fdf2e9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta-form *:focus {
+    outline: none;
+    /* outline: 4px soid #e67e22;
+    outline-offset: 2px; */
+    box-shadow: 0 0 0 0.8rem #fdf2e950;
+}
+
+/**********************************************************/
+/*                          FOOTER                        */
+/**********************************************************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.footer-nav {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 2.4rem;
 }
 
-.list-item {
-    font-size: 1.8rem;
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 300ms ease-out;
+}
 
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
+
+.social-links {
     display: flex;
-    align-items: center;
-    gap: 1.6rem;
+    gap: 2.4rem;
+    list-style: none;
 }
 
-.list-icon {
-    font-size: 3rem;
-    color: #cf711f;
+.social-icon {
+    font-size: 2.4rem;
+}
 
+.copyright {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #767676;
+
+    margin-top: auto;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
 }
