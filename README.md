@@ -6,4 +6,4 @@ Practiced html and css in this project.
 ## Used stack: 
 
 - HTML
-- CSS
+- CSS: Flex-box, grids, animations
