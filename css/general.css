@@ -269,7 +269,8 @@ body {
   outline: none;
   /* outline: 4px soid #e67e22;
     outline-offset: 2px; */
-  box-shadow: 0 0 0 0.4rem #e67e2250;
+  box-shadow: 0 0 0 0.4rem #e67e2275;
+  border-radius: 2px;
 }
 
 /* HELPERS */
