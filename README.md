@@ -5,7 +5,8 @@
 
 
 Practiced html and css in this project.
-## Used stack: 
+## Features and used stack: 
 
 - HTML
 - CSS: Flex-box, grids, animations
+- Responsive design for tablets and phones as well
